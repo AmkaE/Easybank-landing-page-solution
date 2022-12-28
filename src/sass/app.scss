@@ -1,0 +1,19 @@
+@use './lib/' as *;
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,700;1,400&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'Public Sans', sans-serif;
+}
+
+body {
+	background-color: $dark-blue;
+	color: $lime-green;
+}
