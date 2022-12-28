@@ -1,6 +1,7 @@
 <script lang="ts">
-	import Attributions from './lib/Attributions.svelte';
 	import Navbar from './lib/Navbar.svelte';
+	import Intro from './lib/Intro.svelte';
+	import Attributions from './lib/Attributions.svelte';
 </script>
 
 <header>
@@ -8,7 +9,7 @@
 </header>
 
 <main>
-	<!--  -->
+	<Intro />
 </main>
 
 <footer>

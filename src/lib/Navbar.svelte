@@ -25,9 +25,6 @@
 		align-items: center;
 		max-width: 1440px;
 		margin: auto;
-		box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.2);
-		padding: 1rem;
-		background: $white;
 	}
 
 	.nav-links {
