@@ -1,18 +1,23 @@
 <script lang="ts">
 	import Attributions from './lib/Attributions.svelte';
+	import Navbar from './lib/Navbar.svelte';
 </script>
 
-<h1>EasyBank Landing Page Manager</h1>
+<header>
+	<Navbar />
+</header>
+
+<main>
+	<!--  -->
+</main>
+
+<footer>
+	<!--  -->
+</footer>
 
 <Attributions />
 
 <style lang="scss">
 	// import variables
-	@use './sass/lib/' as *;
-
-	h1 {
-		color: $lime-green;
-		text-align: center;
-		padding-bottom: 5rem;
-	}
+	// @use './sass/lib/' as *;
 </style>
