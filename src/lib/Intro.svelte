@@ -17,8 +17,12 @@
 
 	<div class="intro-img">
 		<div class="content">
-			<img src={bgIntroDesktop} alt="background for desktop" />
-			<img src={bgIntroMobile} alt="background for mobile" />
+			<img
+				class="bg-desktop"
+				src={bgIntroDesktop}
+				alt="background for desktop"
+			/>
+			<img class="hidden" src={bgIntroMobile} alt="background for mobile" />
 			<img src={t} alt="foreground for mobile and desktop background images" />
 		</div>
 	</div>
@@ -53,6 +57,7 @@
 				font-size: 1rem;
 				font-weight: 400;
 				color: $grayish-blue;
+				line-height: 1.5rem;
 			}
 
 			&-btn {
@@ -73,10 +78,9 @@
 			top: 0;
 			right: 0;
 		}
-	}
 
-	// div > img.intro-img-desktop {
-	// 	top: -50px;
-	// 	right: -50px;
-	// }
+		img.bg-desktop {
+			right: 50px;
+		}
+	}
 </style>
