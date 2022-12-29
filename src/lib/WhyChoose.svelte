@@ -25,35 +25,52 @@
 	.wrapper {
 		width: 100%;
 		background: $light-grayish-blue;
-		height: 60vh;
+		padding: 5rem 0;
 	}
 
 	.why-choose {
-		display: flex;
-		justify-content: start;
-		align-items: center;
 		height: 100%;
-		max-width: 1440px;
-		margin: auto;
+	}
 
+	.content {
+		&-title {
+			font-size: 3rem;
+			font-weight: 400;
+			color: $dark-blue;
+		}
+
+		&-text {
+			font-size: 1rem;
+			font-weight: 400;
+			color: $grayish-blue;
+			line-height: 1.5rem;
+		}
+	}
+
+	@media screen and (max-width: 1280px) {
 		.content {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: flex-start;
-			gap: 1.5rem;
-
 			&-title {
-				font-size: 3rem;
-				font-weight: 400;
-				color: $dark-blue;
+				font-size: 2.5rem;
 			}
 
 			&-text {
-				font-size: 1rem;
-				font-weight: 400;
-				color: $grayish-blue;
+				font-size: 0.9rem;
 				line-height: 1.5rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.content {
+			text-align: center;
+			align-items: center;
+		}
+	}
+
+	@media screen and (max-width: 540px) {
+		.content {
+			&-title {
+				font-size: 1.5rem;
 			}
 		}
 	}

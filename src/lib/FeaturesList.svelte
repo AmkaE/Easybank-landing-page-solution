@@ -45,12 +45,6 @@
 <style lang="scss">
 	@use '../sass/lib/' as *;
 
-	.features {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 1rem;
-	}
-
 	.feature {
 		display: flex;
 		flex-direction: column;
@@ -74,6 +68,21 @@
 			font-weight: 400;
 			color: $grayish-blue;
 			line-height: 1.25rem;
+		}
+	}
+
+	@media screen and (max-width: 1280px) {
+		.feature {
+			align-items: center;
+			text-align: center;
+
+			&-title {
+				font-size: 1.3rem;
+			}
+
+			&-text {
+				font-size: 0.8rem;
+			}
 		}
 	}
 </style>

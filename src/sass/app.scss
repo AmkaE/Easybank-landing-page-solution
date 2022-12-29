@@ -36,11 +36,13 @@ header {
 	background: $white;
 }
 
-header,
 main,
 footer {
-	padding: 1rem;
 	overflow: hidden;
+}
+
+footer {
+	padding: 1rem;
 }
 
 main {
@@ -64,6 +66,54 @@ main {
 	}
 }
 
-.hidden {
-	display: none;
+.intro,
+.why-choose,
+.blog {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	max-width: 1440px;
+	margin: auto;
+	padding-right: 1rem;
+	padding-left: 1rem;
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 1.5rem;
+	}
+}
+
+.intro {
+	height: 60vh;
+}
+
+.articles,
+.features {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+}
+
+@media screen and (max-width: 1280px) {
+	.articles,
+	.features {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.articles,
+	.features {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.articles,
+	.features {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }

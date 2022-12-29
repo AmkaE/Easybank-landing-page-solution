@@ -34,9 +34,8 @@
 				<p class="footer-legal-text">© Easybank. All Rights Reserved</p>
 			</div>
 		</div>
+		<hr />
 	</div>
-
-	<hr />
 
 	<Attributions />
 </footer>
@@ -53,26 +52,26 @@
 			max-width: 1440px;
 			margin: auto;
 			padding: 2rem 0;
-			margin-bottom: 1rem;
+		}
+	}
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		gap: 1.5rem;
+		margin-bottom: 3rem;
+
+		&-img,
+		.footer-legal {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			justify-content: space-between;
 		}
 
-		.content {
-			display: flex;
-			justify-content: space-between;
-			gap: 1.5rem;
-
-			&-img,
-			.footer-legal {
-				display: flex;
-				flex-direction: column;
-				gap: 1rem;
-				justify-content: space-between;
-			}
-
-			.logo {
-				background-color: $white;
-				padding: 0.2rem;
-			}
+		.logo {
+			background-color: $white;
+			padding: 0.2rem;
 		}
 	}
 
@@ -109,6 +108,37 @@
 		.footer-legal-text {
 			font-size: 0.8rem;
 			color: $grayish-blue;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.content {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 2rem;
+
+			&-img {
+				align-items: center;
+			}
+
+			.footer-legal {
+				align-items: center;
+
+				.btn {
+					align-self: center;
+				}
+			}
+		}
+
+		.footer-links {
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+
+			ul {
+				align-items: center;
+			}
 		}
 	}
 </style>

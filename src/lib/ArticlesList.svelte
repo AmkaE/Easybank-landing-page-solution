@@ -48,12 +48,6 @@
 <style lang="scss">
 	@use '../sass/lib/' as *;
 
-	.articles {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 1rem;
-	}
-
 	.article {
 		display: flex;
 		flex-direction: column;
@@ -99,6 +93,34 @@
 			font-weight: 400;
 			color: $grayish-blue;
 			line-height: 1.25rem;
+		}
+	}
+
+	@media screen and (max-width: 1280px) {
+		.article {
+			&-img {
+				margin-bottom: 0rem;
+				height: 13rem;
+			}
+
+			&-body {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				padding: 0 1rem 1rem 1rem;
+			}
+
+			&-author {
+				font-size: 0.7rem;
+			}
+
+			&-title {
+				font-size: 1.2rem;
+			}
+
+			&-text {
+				font-size: 0.8rem;
+			}
 		}
 	}
 </style>
